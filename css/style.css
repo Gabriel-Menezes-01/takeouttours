@@ -27,6 +27,13 @@ header .navbar{
 header .navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
+
+}
+header .navbar .logo img{
+
+width: 80px;
+height: 60px;
+
 }
 header .navbar .links{
     display: flex;
