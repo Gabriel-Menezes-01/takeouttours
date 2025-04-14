@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
         <title>Take out Tours</title>
     </head>
@@ -25,81 +24,84 @@
                 <div class="nav-icon">
                     <i class="bi bi-list"></i>
                 </div>
-            
-            <div class="dropdown_menu ">
-                <ul class="links">
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Tours</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul> 
+
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    
+
+                    <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
             </div>
-        </header>
-<!-- slader de img -->
-        <section class="slider">
-            <div class="interface">
-                <div class="slide-conteiner">
 
-                    <div class="slide-box">
-                        <img src="./img/carrosel/castelo1.jpg" alt="castelo1">
-                        <div class="text-slider">
-                            <h2>Slader 1</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum temporibus iusto exercitationem deserunt voluptatum repudiandae voluptatibus natus numquam, officiis, vitae ipsum aperiam officia voluptas alias aspernatur blanditiis. Et, rem.</p>
-                        </div>
-                    </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+    </header>
 
-                    <div class="slide-box">
-                        <img src="./img/carrosel/castelo2.jpg" alt="castelo2">
-                        <div class="text-slider">
-                            <h2>Slader 2</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum temporibus iusto exercitationem deserunt voluptatum repudiandae voluptatibus natus numquam, officiis, vitae ipsum aperiam officia voluptas alias aspernatur blanditiis. Et, rem.</p>
-                        </div>
-                    </div>
+    <!-- slader de img -->
+    <section class="slider">
+        <div class="interface">
+            <div class="slide-conteiner">
 
-                    <div class="slide-box">
-                        <img src="./img/carrosel/castelo3.jpg" alt="castelo3">
-                        <div class="text-slider">
-                            <h2>Slader 3</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum temporibus iusto exercitationem deserunt voluptatum repudiandae voluptatibus natus numquam, officiis, vitae ipsum aperiam officia voluptas alias aspernatur blanditiis. Et, rem.</p>
-                        </div>
+                <div class="slide-box ativo">
+                    <img src="./img/carrosel/castelo1.jpg" alt="castelo1">
+                    <div class="text-slider">
+                        <h2>Slader 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum temporibus iusto
+                            exercitationem deserunt voluptatum repudiandae voluptatibus natus numquam, officiis, vitae
+                            ipsum aperiam officia voluptas alias aspernatur blanditiis. Et, rem.</p>
                     </div>
                 </div>
 
-                <!-- setas -->
-                 <div class="setas">
-                    <button id="anterior"> <i class="bi bi-caret-left-fill"></i></button>
-                    <button id="proxima"><i class="bi bi-caret-right-fill"></i></button>
-                 </div>
+                <div class="slide-box ">
+                    <img src="./img/carrosel/castelo2.jpg" alt="castelo2">
+                    <div class="text-slider">
+                        <h2>Slader 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum temporibus iusto
+                            exercitationem deserunt voluptatum repudiandae voluptatibus natus numquam, officiis, vitae
+                            ipsum aperiam officia voluptas alias aspernatur blanditiis. Et, rem.</p>
+                    </div>
+                </div>
 
-                 <!-- botoes de navegaçao -->
-                  <div class="btn-nav-box">
-                    <div class="btn-nav ativor"></div>
-                    <div class="btn-nav"></div>
-                    <div class="btn-nav"></div>
-                  </div>
-
+                <div class="slide-box">
+                    <img src="./img/carrosel/castelo3.jpg" alt="castelo3">
+                    <div class="text-slider">
+                        <h2>Slader 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum temporibus iusto
+                            exercitationem deserunt voluptatum repudiandae voluptatibus natus numquam, officiis, vitae
+                            ipsum aperiam officia voluptas alias aspernatur blanditiis. Et, rem.</p>
+                    </div>
+                </div>
             </div>
+
+            <!-- setas -->
+            <div class="setas">
+                <button id="anterior"> <i class="bi bi-caret-left-fill"></i></button>
+                <button id="proxima"><i class="bi bi-caret-right-fill"></i></button>
+            </div>
+
+            <!-- botoes de navegaçao -->
+            <div class="btn-nav-box">
+                <div class="btn-nav ativo"></div>
+                <div class="btn-nav"></div>
+                <div class="btn-nav"></div>
+            </div>
+
+        </div>
+
 
         </section>
-        
-        <footer>
-            <div id="footer_content">
-                <div id="footer_contacts">
-                    <h1><img src="./img/logo/footer.png" alt=""></h1>
-
-                    <div id="footer_social_media">
-                        <a href="#"class="footer-link"id="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-
-                        </a>
-
-                        <a href="#"class="footer-link"id="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
         <script src="./js/script.js"></script>
     </body>
     </html>
