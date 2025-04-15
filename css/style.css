@@ -285,3 +285,20 @@ header .navbar .links{
 .btn-nav-box .btn-nav.ativo{
   background-color: white;
 }
+
+
+#footer_content{
+  background-color: #000;
+  padding: 3rem 3.5rem;
+}
+#footer_contacts h1 {
+margin-bottom: 0,75rem;
+padding: 5px;
+
+}
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
