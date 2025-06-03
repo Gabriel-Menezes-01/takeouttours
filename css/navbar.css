@@ -292,7 +292,7 @@ nav .navbar .links li .sub-menu li{
       transform: rotate(90deg);
     }
 }
-@media (max-width:370px){
+@media (max-width:375px){
   nav .navbar .nav-links{
   max-width: 100%;
 } 
