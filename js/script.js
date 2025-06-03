@@ -1,69 +1,39 @@
-const navMenu = document.getElementById('nav-menu');
-const navToggle = document.getElementById('nav-toggle');
-const navClose = document.getElementById('nav-close')
+// search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
 
-/* Menu show */
-if(navToggle){
-   navToggle.addEventListener('click', () =>{
-      navMenu.classList.add('show-menu')
-   })
-}
-
-/* Menu hidden */
-if(navClose){
-   navClose.addEventListener('click', () =>{
-      navMenu.classList.remove('show-menu')
-   })
-}
-
-// slider
-
-let imgSlider = document.querySelectorAll('.slide-box');
-let btnProximo = document.querySelector('#proxima');
-let btnAnterior = document.querySelector('#anterior');
-let btnNav = document.querySelectorAll('.btn-nav')
-
-let contadorImg = imgSlider.length;
-let imgAtiva = 0;
-
-btnProximo.addEventListener('click',  ()=>{
-   imgAtiva++;
-   if (imgAtiva >= contadorImg) {
-      imgAtiva = 0;
-   }
-   mostraslider();
-})
-
-btnAnterior.addEventListener('click', ()=>{
-   imgAtiva--;
-   if (imgAtiva < 0) {
-      imgAtiva = contadorImg - 1;
-   }
-   mostraslider();
-})
-
-function mostraslider() {
-   let imgAntiga = document.querySelector('.slide-conteiner .slide-box.ativo');
-   let btnAntiga = document.querySelector('.btn-nav-box .btn-nav.ativo');
-
-   imgAntiga.classList.remove('ativo');
-   btnAntiga.classList.remove('ativo');
-
-   imgSlider[imgAtiva].classList.add('ativo')
-   btnNav[imgAtiva].classList.add('ativo')
-}
-
-btnNav.forEach((btn, indice)=>{
-   btn.addEventListener('click', ()=>{
-      imgAtiva = indice;
-      mostraslider();
-   })
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
 });
-// passa a cada 8s
-setInterval(() => {
-   imgAtiva++;
-   if (imgAtiva >= contadorImg) {
-      imgAtiva = 0;
-   }
-   mostraslider();
-}, 8000); 
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
